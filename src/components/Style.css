@@ -1,0 +1,137 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #0b2434;
+  font-family: "Karla", sans-serif;
+}
+
+.header {
+  position: relative;
+  left: 560px;
+  color: white;
+  bottom: 30px;
+}
+
+.heading--container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.title {
+  font-size: 60px;
+  margin: 0;
+  text-align: center;
+  color: #dc9001;
+  margin-bottom: 70px;
+}
+
+.instructions {
+  color: #e08686;
+  text-align: center;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  margin-top: 0;
+  text-align: center;
+  font-size: 25px;
+  margin-bottom: 50px;
+}
+
+.App {
+  height: 400px;
+  width: 400px;
+  border-radius: 15px;
+  background-color: #f5f5f5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.dice--container {
+  display: grid;
+  grid-template: auto auto/repeat(5, 1fr);
+  gap: 20px;
+}
+
+.die--face {
+  height: 50px;
+  width: 50px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0px 2px 2px rgb(0 0 0 / 15%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.die--face:hover {
+  transform: scale(1.02);
+}
+
+.die--num {
+  font-size: 2rem;
+}
+
+.button {
+  margin-top: 50px;
+  height: 80px;
+  width: 80px;
+  border-radius: 17px;
+  font-size: 1.5rem;
+  font-family: "Karla", sans-serif;
+  cursor: pointer;
+  background-color: #c4bed1;
+}
+
+.button:hover {
+  transform: scale(1.01);
+}
+
+.button:focus {
+  outline: none;
+}
+.button:active {
+  box-shadow: inset 5px 5px 10px -3px rgba(0, 0, 0, 0.7);
+}
+
+.count {
+  position: absolute;
+  left: 1100px;
+  color: rgb(238, 231, 231);
+  height: 250px;
+  width: 250px;
+  border: 2px solid white;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  padding-top: 25px;
+  border-radius: 50%;
+  margin-top: 165px;
+  font-size: 40px;
+}
+
+.count-won {
+  position: absolute;
+  left: 1100px;
+  height: 250px;
+  width: 250px;
+  border: 2px solid white;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  margin-top: 165px;
+  font-size: 40px;
+  font-family: Arial, Helvetica, sans-serif;
+  background: linear-gradient(to right, #f32170, #ff6b08, #cf23cf, #eedd44);
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
